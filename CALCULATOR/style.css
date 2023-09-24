@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+
+    /* background-color: #e6d0d0; */
+    /* background-image: url("/images/logo.png"); */
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTxxOEzhMIQKHMlFWQjuQ2VFa9nIK4M692i4GjtOhdA3RIVVtNYuYtsexDSoC7ybq5svU&usqp=CAU"); */
+}
+
+.calculator {
+    border: 1px solid white;
+    /* background: #ea5459; */
+    /* background: crimson; */
+    /* background: #182a84; */
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(0, 152, 155, 1) 0.1%, rgba(0, 94, 120, 1) 94.2%);
+    border-radius: 5px;
+    padding: 2%;
+    width: 300px;
+    min-width: 300px;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.4), 4px 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+.calculator h2 {
+    color: rgb(255, 247, 252);
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    background: #ffffff;
+    min-height: 50px;
+    padding: 5px;
+    margin: 0 1px 10px;
+    border-radius: 0.25rem;
+    box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.output pre {
+    text-align: right;
+    font-size: 25px;
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    width: 288px;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.output pre::-webkit-scrollbar {
+    display: none;
+}
+
+.output #upper {
+    color: #424242;
+    font-size: 18px;
+}
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input button {
+    width: calc(25% - 24px);
+    height: 50px;
+    margin: 8px 12px;
+    border-radius: 50%;
+    /* background-color: #c05d5d; */
+    background-color: #c73d84;
+    /* background-color: crimson; */
+    box-shadow: inset 1px 1px 2px rgba(255, 255, 255, 0.3), 1px 1px 5px rgba(94, 31, 31, 0.7);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.input button:hover {
+    /* background-color: #b57474; */
+    background-image: radial-gradient(circle 685.3px at 47.8% 55.1%, rgba(255, 99, 152, 1) 0%, rgba(251, 213, 149, 1) 90.1%);
+}
+
+.input button:active {
+    box-shadow: inset 1px 1px 5px rgba(94, 31, 31, 0.7), inset -1px -1px 2px rgba(255, 255, 255, 0.3);
+    color: #b57474;
+}
+
+.footer {
+    text-align: center;
+    position: relative;
+    top: 10%;
+    /* margin-top: 8%; */
+    /* background-image: linear-gradient(0deg, #fadee8 0%, #B5FFFC 100%); */
+
+}
+
+.footer a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: blue;
+}
